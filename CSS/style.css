@@ -1,0 +1,33 @@
+.mapWidgetDefault {
+    margin: 10px;
+    height: 300px;
+    width: 1350px;
+    border: solid 1px;
+    text-align: left;
+}
+
+.widgetIconCollapse {
+    content:url("../open-iconic/svg/chevron-top.svg");
+    margin-right: 10px;
+    float: right;
+    clear: right;
+    height: 20px;
+    width: 20px;
+}
+
+.widgetIconExpand {
+    content:url("../open-iconic/svg/chevron-bottom.svg");
+    margin-right: 10px;
+    float: right;
+    clear: right;
+    height: 20px;
+    width: 20px;
+}
+
+.mapWidgetCollapsed {
+    margin: 10px;
+    height: 24px;
+    width: 1350px;
+    border: solid 1px;
+    text-align: left;
+}
