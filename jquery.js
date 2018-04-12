@@ -1,17 +1,15 @@
 $(function() {
     $(".mapWidgetDefault").resizable({
-        maxHeight: 600,
+        maxHeight: 650,
         maxWidth: 1350,
         minHeight: 300,
         minWidth: 675
-      },{
-        alsoResize: ".mapWidgetInterior"
       }).draggable({containment: 'window'
       });
   });
 
 
-$( ".widgetIconCollapse" ).click(function(){
+$( "#mapIcon" ).click(function(){
     $(this).toggleClass("widgetIconExpand")
     $(".mapWidgetDefault").toggleClass("mapWidgetCollapsed")
 
@@ -26,4 +24,32 @@ $( ".widgetIconCollapse" ).click(function(){
     }
 
     $('#map').css("height", "");
+});
+
+$(function() {
+    $(".videoWidgetDefault").resizable({
+        maxHeight: 300,
+        maxWidth: 150,
+        minHeight: 150,
+        minWidth: 150
+      }).draggable({containment: 'window'
+      });
+  });
+
+
+$( "#videoIcon" ).click(function(){
+    $(this).toggleClass("widgetIconExpand")
+    $(".videoWidgetDefault").toggleClass("videoWidgetCollapsed")
+
+    if ($(".videoWidgetDefault").hasClass('videoWidgetCollapsed')) {
+        $(".videoWidgetDefault").resizable({
+            handles: 'e, w'
+        })
+    } else {
+        $(".videoWidgetDefault").resizable({
+            handles: 'e, w, n, s, se'
+        })
+    }
+
+    $('#video').css("height", "");
 });
