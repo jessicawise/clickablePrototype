@@ -33,16 +33,16 @@
     width: 150px;
     border: solid 1px;
     text-align: left;
-    overflow: hidden;
     position: absolute !important;
     background: white;
     top: 310px;
+    overflow: hidden;
 }
 
 .videoWidgetCollapsed {
     margin: 10px;
     height: 24px;
-    width: 200px;
+    width: 150px;
     border: solid 1px;
     text-align: left;
 }
@@ -50,9 +50,16 @@
 .videoWidgetInterior {
     margin: 5px;
     border: solid 1px;
-    height: 94%;
+    height: 100px;
     background: darkgrey;
 }
+
+.videoOverflow {
+    overflow:auto;
+    height: 100%;
+}
+
+
 
 /* Widget Icons */
 

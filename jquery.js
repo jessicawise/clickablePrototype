@@ -1,3 +1,5 @@
+// Map Widget //
+
 $(function() {
     $(".mapWidgetDefault").resizable({
         maxHeight: 650,
@@ -25,6 +27,8 @@ $( "#mapIcon" ).click(function(){
 
     $('#map').css("height", "");
 });
+
+// Video Widget //
 
 $(function() {
     $(".videoWidgetDefault").resizable({
