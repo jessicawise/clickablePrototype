@@ -37,6 +37,5 @@
 .mapWidgetInterior {
     margin: 5px;
     border: solid 1px;
-    display: flex;
-    height: inherit;
+    height: 100%;
 }
