@@ -1,9 +1,11 @@
 $(function() {
     $(".mapWidgetDefault").resizable({
-        maxHeight: 400,
+        maxHeight: 600,
         maxWidth: 1350,
         minHeight: 300,
         minWidth: 675
+      },{
+        alsoResize: ".mapWidgetInterior"
       }).draggable({containment: 'window'
       });
   });
