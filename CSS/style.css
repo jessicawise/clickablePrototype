@@ -1,6 +1,6 @@
 /* Map */
 
-.mapWidgetDefault {
+#map{
     margin: 10px;
     height: 300px;
     width: 1350px;
@@ -10,12 +10,8 @@
     position: absolute !important;
 }
 
-.mapWidgetCollapsed {
-    margin: 10px;
-    height: 24px;
-    width: 1350px;
-    border: solid 1px;
-    text-align: left;
+.collapsed {
+    height: 24px !important;
 }
 
 .mapWidgetInterior {
@@ -25,9 +21,13 @@
     background: darkgrey;
 }
 
+.header {
+    margin: 0 0 5px;
+}
+
 /* Video */
 
-.videoWidgetDefault {
+#video{
     margin: 10px;
     height: 300px;
     width: 150px;
@@ -37,14 +37,6 @@
     background: white;
     top: 310px;
     overflow: hidden;
-}
-
-.videoWidgetCollapsed {
-    margin: 10px;
-    height: 24px;
-    width: 150px;
-    border: solid 1px;
-    text-align: left;
 }
 
 .videoWidgetInterior {
@@ -59,13 +51,9 @@
     height: 100%;
 }
 
-.videoHeader {
-    margin: 0 0 5px;
-}
-
 /* Chat */
 
-.chatWidgetDefault {
+#chat {
     margin: 10px;
     height: 300px;
     width: 250px;
@@ -78,14 +66,6 @@
     overflow: hidden;
 }
 
-.chatWidgetCollapsed {
-    margin: 10px;
-    height: 24px;
-    width: 250px;
-    border: solid 1px;
-    text-align: left;
-}
-
 .chatWidgetInterior {
     margin: 5px;
     border: solid 1px;
@@ -96,7 +76,7 @@
 
 /* Turn Order */
 
-.turnWidgetDefault {
+#turn {
     margin: 10px;
     height: 300px;
     width: 150px;
@@ -109,14 +89,6 @@
     overflow: hidden;
 }
 
-.turnWidgetCollapsed {
-    margin: 10px;
-    height: 24px;
-    width: 150px;
-    border: solid 1px;
-    text-align: left;
-}
-
 .turnWidgetInterior {
     margin: 5px;
     border: solid 1px;
@@ -127,10 +99,6 @@
 .turnOverflow {
     overflow:auto;
     height: 100%;
-}
-
-.videoHeader {
-    margin: 0 0 5px;
 }
 
 /* Widget Icons */
