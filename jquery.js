@@ -32,7 +32,7 @@ $( "#mapIcon" ).click(function(){
 
 $(function() {
     $(".videoWidgetDefault").resizable({
-        maxHeight: 300,
+        maxHeight: 350,
         maxWidth: 150,
         minHeight: 150,
         minWidth: 150
@@ -56,4 +56,64 @@ $( "#videoIcon" ).click(function(){
     }
 
     $('#video').css("height", "");
+});
+
+// Chat Widget //
+
+$(function() {
+    $(".chatWidgetDefault").resizable({
+        maxHeight: 350,
+        maxWidth: 250,
+        minHeight: 150,
+        minWidth: 250
+      }).draggable({containment: 'window'
+      });
+  });
+
+
+$( "#chatIcon" ).click(function(){
+    $(this).toggleClass("widgetIconExpand")
+    $(".chatWidgetDefault").toggleClass("chatWidgetCollapsed")
+
+    if ($(".chatWidgetDefault").hasClass('chatWidgetCollapsed')) {
+        $(".chatWidgetDefault").resizable({
+            handles: 'e, w'
+        })
+    } else {
+        $(".chatWidgetDefault").resizable({
+            handles: 'e, w, n, s, se'
+        })
+    }
+
+    $('#chat').css("height", "");
+});
+
+// Turn Order Widget //
+
+$(function() {
+    $(".turnWidgetDefault").resizable({
+        maxHeight: 350,
+        maxWidth: 150,
+        minHeight: 137,
+        minWidth: 150
+      }).draggable({containment: 'window'
+      });
+  });
+
+
+$( "#turnIcon" ).click(function(){
+    $(this).toggleClass("widgetIconExpand")
+    $(".turnWidgetDefault").toggleClass("turnWidgetCollapsed")
+
+    if ($(".turnWidgetDefault").hasClass('turnWidgetCollapsed')) {
+        $(".turnWidgetDefault").resizable({
+            handles: 'e, w'
+        })
+    } else {
+        $(".turnWidgetDefault").resizable({
+            handles: 'e, w, n, s, se'
+        })
+    }
+
+    $('#turn').css("height", "");
 });

@@ -63,7 +63,75 @@
     margin: 0 0 5px;
 }
 
+/* Chat */
 
+.chatWidgetDefault {
+    margin: 10px;
+    height: 300px;
+    width: 250px;
+    border: solid 1px;
+    text-align: left;
+    position: absolute !important;
+    background: white;
+    top: 310px;
+    left: 170px;
+    overflow: hidden;
+}
+
+.chatWidgetCollapsed {
+    margin: 10px;
+    height: 24px;
+    width: 250px;
+    border: solid 1px;
+    text-align: left;
+}
+
+.chatWidgetInterior {
+    margin: 5px;
+    border: solid 1px;
+    height: 310px;
+    background: darkgrey;
+    overflow: auto;
+}
+
+/* Turn Order */
+
+.turnWidgetDefault {
+    margin: 10px;
+    height: 300px;
+    width: 150px;
+    border: solid 1px;
+    text-align: left;
+    position: absolute !important;
+    background: white;
+    top: 150px;
+    right: 50px;
+    overflow: hidden;
+}
+
+.turnWidgetCollapsed {
+    margin: 10px;
+    height: 24px;
+    width: 150px;
+    border: solid 1px;
+    text-align: left;
+}
+
+.turnWidgetInterior {
+    margin: 5px;
+    border: solid 1px;
+    height: 100px;
+    background: darkgrey;
+}
+
+.turnOverflow {
+    overflow:auto;
+    height: 100%;
+}
+
+.videoHeader {
+    margin: 0 0 5px;
+}
 
 /* Widget Icons */
 
