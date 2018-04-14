@@ -1,3 +1,17 @@
+.collapsed {
+    height: 24px !important;
+}
+
+.widgetInterior {
+    margin: 5px;
+    border: solid 1px;
+    background: darkgrey;
+}
+
+.header {
+    margin: 0 0 5px;
+}
+
 /* Map */
 
 #map{
@@ -8,21 +22,11 @@
     text-align: left;
     overflow: hidden;
     position: absolute !important;
+    background: white;
 }
 
-.collapsed {
-    height: 24px !important;
-}
-
-.mapWidgetInterior {
-    margin: 5px;
-    border: solid 1px;
+#mapInterior {
     height: 94%;
-    background: darkgrey;
-}
-
-.header {
-    margin: 0 0 5px;
 }
 
 /* Video */
@@ -39,11 +43,8 @@
     overflow: hidden;
 }
 
-.videoWidgetInterior {
-    margin: 5px;
-    border: solid 1px;
+#videoInterior {
     height: 100px;
-    background: darkgrey;
 }
 
 .videoOverflow {
@@ -66,11 +67,8 @@
     overflow: hidden;
 }
 
-.chatWidgetInterior {
-    margin: 5px;
-    border: solid 1px;
+#chatInterior {
     height: 310px;
-    background: darkgrey;
     overflow: auto;
 }
 
@@ -89,16 +87,33 @@
     overflow: hidden;
 }
 
-.turnWidgetInterior {
-    margin: 5px;
-    border: solid 1px;
+#turnInterior {
     height: 100px;
-    background: darkgrey;
 }
 
 .turnOverflow {
     overflow:auto;
     height: 100%;
+}
+
+/* Dice Roller */
+
+#dice{
+    margin: 10px;
+    height: 200px;
+    width: 800px;
+    top: 320px;
+    right: 100px;
+    border: solid 1px;
+    text-align: left;
+    overflow: hidden;
+    position: absolute !important;
+    background: white;
+}
+
+#diceInterior {
+    height: 84%;
+
 }
 
 /* Widget Icons */

@@ -20,7 +20,8 @@ function applyDragResize(selector, config) {
         minWidth: config.minWidth,
         handles: dirString
       }).draggable({
-        containment: 'window'
+        containment: "window",
+        stack: ".widgets"
       });
 
     //collapser
@@ -30,7 +31,7 @@ function applyDragResize(selector, config) {
     
         if ($(selector).hasClass("collapsed")) {
             $(selector).resizable({
-                handles: horizontal ? 'e, w' : 'se'
+                handles: horizontal ? "e, w" : "s"
             })
         } else {
             $(selector).resizable({
@@ -39,6 +40,10 @@ function applyDragResize(selector, config) {
         }
 
         $(selector).css("height", "");
+    });
+
+    $(selector + " .ui-widget-header").hover(function() {
+        $(this).css("cursor","move")
     });
 }
 
@@ -76,4 +81,13 @@ applyDragResize("#turn", {
     maxWidth: 150,
     minHeight: 137,
     minWidth: 150
+});
+
+// Dice ROller Widget //
+
+applyDragResize("#dice", {
+    maxHeight: 250,
+    maxWidth: 800,
+    minHeight: 200,
+    minWidth: 550
 });

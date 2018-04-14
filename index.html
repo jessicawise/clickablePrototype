@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="utf-8">
-<title>Venture.ng</title>
 
-<link rel="stylesheet" href="CSS/normalize.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="CSS/style.css">
-<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+<head>
+    <meta charset="utf-8">
+    <title>Venture.ng</title>
+
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
 
 </head>
+
 <body>
 
-<div id='map'>
+    <div id="map" class="widgets">
+        <p class="ui-widget-header">
+            Map <img class="widgetIconCollapse">
+        </p>
+        <div id="mapInterior" class="widgetInterior">
+
+        </div>
+    </div>
+
+    <div id="video" class="widgets">
+        <p class="ui-widget-header header">
+            Video <img class="widgetIconCollapse">
+        </p>
+        <div class="videoOverflow">
+            <div id="videoInterior" class="widgetInterior">
+
+            </div>
+            <div id="videoInterior" class="widgetInterior">
+
+            </div>
+            <div id="videoInterior" class="widgetInterior">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="chat" class="widgets">
+        <p class="ui-widget-header">
+            Chat <img class="widgetIconCollapse">
+        </p>
+        <div id="chatInterior" class="widgetInterior"></div>
+    </div>
+
+    <div id="turn" class="widgets">
+        <p class="ui-widget-header header">
+            Turn Order <img class="widgetIconCollapse">
+        </p>
+        <div class="turnOverflow">
+            <div id="turnInterior" class="widgetInterior"></div>
+            <div id="turnInterior" class="widgetInterior"></div>
+            <div id="turnInterior" class="widgetInterior"></div>
+        </div>
+    </div>
+
+    <div id="dice" class="widgets">
       <p class="ui-widget-header">
-            Map <img id="mapIcon" class="widgetIconCollapse">
+          Dice Roller <img class="widgetIconCollapse">
       </p>
-      <div class="mapWidgetInterior">
-            
-      </div>
-</div>
+      <div id="diceInterior" class="widgetInterior"></div>
+  </div>
 
-<div id='video'>
-      <p class="ui-widget-header header">
-            Video <img id="videoIcon" class="widgetIconCollapse">
-      </p>
-      <div class="videoOverflow">
-            <div class="videoWidgetInterior">
-
-            </div>
-      <div class="videoWidgetInterior">
-
-      </div>
-      <div class="videoWidgetInterior">
-
-      </div>
-      </div>
-      </div>
-
-      <div id='chat'>
-            <p class="ui-widget-header">
-            Chat <img id="chatIcon" class="widgetIconCollapse">
-      </p>
-            <div class="chatWidgetInterior"></div>
-            </div>
-
-            <div id='turn'>
-                  <p class="ui-widget-header header">
-                        Turn Order <img id="turnIcon" class="widgetIconCollapse">
-                  </p>
-                  <div class="turnOverflow">
-                        <div class="turnWidgetInterior">
-                              
-                        </div>
-                  <div class="turnWidgetInterior"></div>
-                  <div class="turnWidgetInterior"></div>
-            </div>
-                  </div>
-
-      <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous">
-      </script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script src="jquery.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
