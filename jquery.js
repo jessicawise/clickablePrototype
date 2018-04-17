@@ -1,7 +1,8 @@
 
 function applyDragResize(selector, config) {
     var horizontal = false;
-    var dirString = "se"
+    var dirString = "se";
+    var elements = 5;
 
     if (config.maxWidth > config.minWidth) {
         horizontal = true;
@@ -44,6 +45,11 @@ function applyDragResize(selector, config) {
 
     $(selector + " .ui-widget-header").hover(function() {
         $(this).css("cursor","move")
+    });
+
+    $(selector).click(function() {
+        elements++
+        $(this).css("z-index",elements)
     });
 }
 

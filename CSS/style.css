@@ -12,6 +12,10 @@
     margin: 0 0 5px;
 }
 
+.zIndex {
+    z-index: 10;
+}
+
 /* Map */
 
 #map{
