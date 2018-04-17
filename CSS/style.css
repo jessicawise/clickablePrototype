@@ -25,6 +25,20 @@
     z-index: 10;
 }
 
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+}
+
 /* Map */
 
 #map{
@@ -71,7 +85,7 @@
 
 #turn {
     height: 300px;
-    width: 150px;
+    width: 200px;
     top: 150px;
     right: 50px;
 }
@@ -83,6 +97,10 @@
 .turnOverflow {
     overflow:auto;
     height: 100%;
+}
+
+#active {
+    border: solid darkred 2px;
 }
 
 /* Dice Roller */

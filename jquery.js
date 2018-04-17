@@ -85,7 +85,7 @@ applyDragResize("#chat", {
 
 applyDragResize("#turn", {
     maxHeight: 350,
-    maxWidth: 150,
+    maxWidth: 200,
     minHeight: 137,
     minWidth: 150
 });

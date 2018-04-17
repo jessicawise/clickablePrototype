@@ -18,9 +18,13 @@
         <p class="ui-widget-header">
             Map <img class="widgetIconCollapse">
         </p>
-        <div id="mapInterior" class="widgetInterior">
-
+        <div class="container-fluid">
+        <div class="row">
+        <div id="mapInterior" class="col-md widgetInterior">
+            <img src="images/ddmap.jpg" />
         </div>
+    </div>
+    </div>
     </div>
 
     <div id="video" class="widgets">
@@ -52,9 +56,32 @@
             Turn Order <img class="widgetIconCollapse">
         </p>
         <div class="turnOverflow">
-            <div id="turnInterior" class="widgetInterior"></div>
-            <div id="turnInterior" class="widgetInterior"></div>
-            <div id="turnInterior" class="widgetInterior"></div>
+            <div class="container-fluid">
+                <div class="row"  id="active">
+                    <div class="col-xs">
+                        <img src="images/monster1.png" class="icon floatLeft">
+                        <div class="col-xs"><h4>Monster 1</h4>
+                        <p>Initiative: 20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                                <div class="col-xs">
+                                    <img src="images/character1.png" class="icon floatLeft">
+                                    <div class="col-xs"><h4>Character 1</h4>
+                                    <p>Initiative: 15</p>
+                                    </div>
+                                </div>
+                </div>
+                <div class="row">
+                        <div class="col-xs">
+                            <img src="images/monster2.png" class="icon floatLeft">
+                            <div class="col-xs"><h4>Monster 2</h4>
+                            <p>Initiative: 5</p>
+                            </div>
+                        </div>
+        </div>
+            </div>
         </div>
     </div>
 
