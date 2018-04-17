@@ -1,8 +1,9 @@
 
+ var elements = 5;
+
 function applyDragResize(selector, config) {
     var horizontal = false;
     var dirString = "se";
-    var elements = 5;
 
     if (config.maxWidth > config.minWidth) {
         horizontal = true;
@@ -89,7 +90,7 @@ applyDragResize("#turn", {
     minWidth: 150
 });
 
-// Dice ROller Widget //
+// Dice Roller Widget //
 
 applyDragResize("#dice", {
     maxHeight: 250,
@@ -97,3 +98,13 @@ applyDragResize("#dice", {
     minHeight: 200,
     minWidth: 550
 });
+
+// Character Sheet Widget //
+
+applyDragResize("#character", {
+    maxHeight: 300,
+    maxWidth: 1350,
+    minHeight: 300,
+    minWidth: 675
+});
+

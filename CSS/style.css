@@ -8,6 +8,15 @@
     background: darkgrey;
 }
 
+.widgets {
+    margin: 10px;
+    border: solid 1px;
+    text-align: left;
+    position: absolute !important;
+    background: white;
+    overflow: hidden;
+}
+
 .header {
     margin: 0 0 5px;
 }
@@ -19,14 +28,8 @@
 /* Map */
 
 #map{
-    margin: 10px;
     height: 300px;
     width: 1350px;
-    border: solid 1px;
-    text-align: left;
-    overflow: hidden;
-    position: absolute !important;
-    background: white;
 }
 
 #mapInterior {
@@ -36,15 +39,9 @@
 /* Video */
 
 #video{
-    margin: 10px;
     height: 300px;
     width: 150px;
-    border: solid 1px;
-    text-align: left;
-    position: absolute !important;
-    background: white;
     top: 310px;
-    overflow: hidden;
 }
 
 #videoInterior {
@@ -59,16 +56,10 @@
 /* Chat */
 
 #chat {
-    margin: 10px;
     height: 300px;
     width: 250px;
-    border: solid 1px;
-    text-align: left;
-    position: absolute !important;
-    background: white;
     top: 310px;
     left: 170px;
-    overflow: hidden;
 }
 
 #chatInterior {
@@ -79,16 +70,10 @@
 /* Turn Order */
 
 #turn {
-    margin: 10px;
     height: 300px;
     width: 150px;
-    border: solid 1px;
-    text-align: left;
-    position: absolute !important;
-    background: white;
     top: 150px;
     right: 50px;
-    overflow: hidden;
 }
 
 #turnInterior {
@@ -103,21 +88,25 @@
 /* Dice Roller */
 
 #dice{
-    margin: 10px;
     height: 200px;
     width: 800px;
-    top: 320px;
+    top: 310px;
     right: 100px;
-    border: solid 1px;
-    text-align: left;
-    overflow: hidden;
-    position: absolute !important;
-    background: white;
 }
 
 #diceInterior {
     height: 84%;
 
+}
+
+#character{
+    height: 300px;
+    width: 1350px;
+    top: 350px;
+}
+
+#characterInterior{
+    height: 88%
 }
 
 /* Widget Icons */
