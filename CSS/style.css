@@ -58,13 +58,18 @@
     top: 310px;
 }
 
-#videoInterior {
-    height: 100px;
-}
-
 .videoOverflow {
     overflow:auto;
     height: 100%;
+}
+
+.videoIcon {
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
 }
 
 /* Chat */
@@ -90,8 +95,8 @@
     right: 50px;
 }
 
-#turnInterior {
-    height: 100px;
+#active {
+    border: solid darkred 2px;
 }
 
 .turnOverflow {
@@ -99,8 +104,8 @@
     height: 100%;
 }
 
-#active {
-    border: solid darkred 2px;
+.name{
+    padding-top: 5px;
 }
 
 /* Dice Roller */
