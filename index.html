@@ -31,8 +31,8 @@
         <p class="ui-widget-header header">
             Video <img class="widgetIconCollapse">
         </p>
-        <div class="videoOverflow">
-            <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="videoOverflow">
                 <div class="row">
                     <div class="col-xs">
                         <img src="images/video1.png" class="videoIcon">
@@ -56,14 +56,30 @@
         <p class="ui-widget-header">
             Chat <img class="widgetIconCollapse">
         </p>
-        <div id="chatInterior" class="widgetInterior"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                        <div id="chatInterior" class="panel panel-default">
+                                <div id="chatBody" class="panel-body">
+                                  <strong>Amanda:</strong>
+                                  <br />
+                                  Are we really about to do this?
+                                  <br />
+                                  <span><em>User is typing</em></span>
+                                </div>
+                              </div>
+        <div><textarea id="textBox" class="form-control" rows="2"></textarea>
+            <button type="button" id="chatButton" class="btn btn-primary">Send</button></div>
+    </div>
+</div>
+    </div>
     </div>
 
     <div id="turn" class="widgets">
         <p class="ui-widget-header header">
             Turn Order <img class="widgetIconCollapse">
         </p>
-        <div class="turnOverflow">
+        <div id="turnOverflow">
             <div class="container-fluid">
                 <div class="row" id="active">
                     <div class="col-xs">

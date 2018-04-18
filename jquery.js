@@ -108,3 +108,10 @@ applyDragResize("#character", {
     minWidth: 675
 });
 
+$( "textarea" ).focus(function() {
+    $( "span" ).css( "display", "inline" );
+  });
+
+$("textarea").focusout(function() {
+    $("span").css("display", "none");
+});

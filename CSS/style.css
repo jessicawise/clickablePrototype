@@ -82,8 +82,26 @@
 }
 
 #chatInterior {
-    height: 310px;
-    overflow: auto;
+    height: 200px;
+    margin: 5px;
+}
+
+#chatBody {
+    padding: 5px;
+}
+
+#textBox {
+    margin: 5px;
+    width: 96%;
+}
+
+#chatButton {
+    float: right;
+    margin: 0 5px;
+}
+
+span {
+    display: none;
 }
 
 /* Turn Order */
@@ -99,7 +117,7 @@
     border: solid darkred 2px;
 }
 
-.turnOverflow {
+#turnOverflow {
     overflow:auto;
     height: 100%;
 }
