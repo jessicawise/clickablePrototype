@@ -84,6 +84,7 @@
 #chatInterior {
     height: 200px;
     margin: 5px;
+    overflow: auto;
 }
 
 #chatBody {
@@ -101,6 +102,7 @@
 }
 
 span {
+    margin-top: 5px;
     display: none;
 }
 

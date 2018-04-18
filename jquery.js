@@ -108,10 +108,29 @@ applyDragResize("#character", {
     minWidth: 675
 });
 
+// Chat Sample Functionality //
+var typing = $("<i></i>").text("User is typing...");
+
 $( "textarea" ).focus(function() {
-    $( "span" ).css( "display", "inline" );
+    $( "#chatBody" ).append("<br />", typing);
   });
 
 $("textarea").focusout(function() {
-    $("span").css("display", "none");
+    $(typing).remove();
 });
+
+var chatResponse = ["<b>User:</b></br> Leroyyyy Jenkins!"]
+
+$("#chatButton").click(function() {
+    $("#chatBody").append(chatResponse[0])
+    $("textarea").val('')
+});
+
+$('textarea').keypress(function (e) {
+    if (e.which == 13) {
+      $('#chatBody').append(chatResponse[0]);
+      $("textarea").val('').blur()
+      return false;    //<---- Add this line
+      
+    }
+  });
