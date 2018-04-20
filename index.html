@@ -59,19 +59,20 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md">
-                        <div id="chatInterior" class="panel panel-default">
-                                <div id="chatBody" class="panel-body">
-                                  <strong>Amanda:</strong>
-                                  <br />
-                                  Are we really about to do this?
-                                  <br />
-                                </div>
-                              </div>
-        <div><textarea id="textBox" class="form-control" rows="2"></textarea>
-            <button type="button" id="chatButton" class="btn btn-primary">Send</button></div>
-    </div>
-</div>
-    </div>
+                    <div id="chatInterior" class="panel panel-default">
+                        <div id="chatBody" class="panel-body">
+                            <strong>Amanda:</strong>
+                            <br /> Are we really about to do this?
+                            <br />
+                        </div>
+                    </div>
+                    <div>
+                        <textarea id="textBox" class="form-control" rows="2"></textarea>
+                        <button type="button" id="chatButton" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="turn" class="widgets">
@@ -117,49 +118,50 @@
         </p>
         <div class="container-fluid">
             <div class="row">
-        <div id="diceInterior" class="col-md floatLeft">
-                <form class="form-inline">
-                    <div class="form-group">
-                          <label>d4</label>
-                          <input type="text" class="form-control">
+                <div id="diceInterior" class="col-md floatLeft">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label>d4</label>
+                            <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                                <label>d6</label>
-                                <input type="text" class="form-control">
-                              </div>
-                              <div class="form-group">
-                                    <label>d8</label>
-                                    <input type="text" class="form-control">
-                                  </div>
-                                  <div class="form-group">
-                                        <label>d10</label>
-                                        <input type="text" class="form-control">
-                                      </div>
-                                      <div class="form-group">
-                                            <label>d12</label>
-                                            <input type="text" class="form-control">
-                                          </div>
-                                          <div class="form-group">
-                                                <label>d20</label>
-                                                <input type="text" class="form-control">
-                                              </div>
-                                              <div class="form-group">
-                                                    <label>d100</label>
-                                                    <input type="text" class="form-control">
-                                                  </div>
+                            <label>d6</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>d8</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>d10</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>d12</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>d20</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>d100</label>
+                            <input type="text" class="form-control">
+                        </div>
                         <button type="button" class="btn btn-primary" id="rollSubmit">Roll</button>
-                      </form>
-                      <div id="diceRoll"></div>
+                    </form>
+                    <div id="diceRoll"></div>
+                </div>
+                <div id="diceInteriorResult" class="col-md floatRight">
+                    <h3>Result</h3>
+                    <div>
+                        <div id="result"></div>
+                        <br />
+                        <button type="button" class="btn btn-primary">Send to Chat</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="diceInteriorResult" class="col-md floatRight"><h3>Result</h3>
-        <div>
-            <div id="result"></div>
-                <br />
-                <button type="button" class="btn btn-primary">Send to Chat</button>
-        </div>
-        </div>
-    </div>
-    </div>
     </div>
 
     <div id="character" class="widgets">
