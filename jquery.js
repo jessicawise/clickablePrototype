@@ -134,3 +134,10 @@ $('textarea').keypress(function (e) {
       
     }
   });
+
+  // Dice Roller Functionality //
+
+  $("#rollSubmit").click(function() {
+      $("#diceRoll").append('<img src="images/dice.png" style="margin-top:28px; margin-left:90px;" />')
+      $("#result").append("<h1 style='margin-left:90px;'>18</h1>")
+  });

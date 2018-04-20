@@ -120,40 +120,42 @@
         <div id="diceInterior" class="col-md floatLeft">
                 <form class="form-inline">
                     <div class="form-group">
-                          <label for="exampleInputName2">d4</label>
+                          <label>d4</label>
                           <input type="text" class="form-control">
                         </div>
                         <div class="form-group">
-                                <label for="exampleInputName2">d6</label>
+                                <label>d6</label>
                                 <input type="text" class="form-control">
                               </div>
                               <div class="form-group">
-                                    <label for="exampleInputName2">d8</label>
+                                    <label>d8</label>
                                     <input type="text" class="form-control">
                                   </div>
                                   <div class="form-group">
-                                        <label for="exampleInputName2">d10</label>
+                                        <label>d10</label>
                                         <input type="text" class="form-control">
                                       </div>
                                       <div class="form-group">
-                                            <label for="exampleInputName2">d12</label>
+                                            <label>d12</label>
                                             <input type="text" class="form-control">
                                           </div>
                                           <div class="form-group">
-                                                <label for="exampleInputName2">d20</label>
+                                                <label>d20</label>
                                                 <input type="text" class="form-control">
                                               </div>
                                               <div class="form-group">
-                                                    <label for="exampleInputName2">d100</label>
+                                                    <label>d100</label>
                                                     <input type="text" class="form-control">
                                                   </div>
-                        <button type="submit" class="btn btn-primary">Roll</button>
+                        <button type="button" class="btn btn-primary" id="rollSubmit">Roll</button>
                       </form>
+                      <div id="diceRoll"></div>
         </div>
         <div id="diceInteriorResult" class="col-md floatRight"><h3>Result</h3>
-        <div id="result">
+        <div>
+            <div id="result"></div>
                 <br />
-                <button type="submit" class="btn btn-primary">Send to Chat</button>
+                <button type="button" class="btn btn-primary">Send to Chat</button>
         </div>
         </div>
     </div>
