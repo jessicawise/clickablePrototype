@@ -20,7 +20,7 @@
         </p>
         <div class="container-fluid">
             <div class="row">
-                <div id="mapInterior" class="col-md widgetInterior">
+                <div id="mapInterior" class="col-md">
                     <img src="images/ddmap.jpg" />
                 </div>
             </div>
@@ -115,14 +115,62 @@
         <p class="ui-widget-header">
             Dice Roller <img class="widgetIconCollapse">
         </p>
-        <div id="diceInterior" class="widgetInterior"></div>
+        <div class="container-fluid">
+            <div class="row">
+        <div id="diceInterior" class="col-md floatLeft">
+                <form class="form-inline">
+                    <div class="form-group">
+                          <label for="exampleInputName2">d4</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleInputName2">d6</label>
+                                <input type="text" class="form-control">
+                              </div>
+                              <div class="form-group">
+                                    <label for="exampleInputName2">d8</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="exampleInputName2">d10</label>
+                                        <input type="text" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                            <label for="exampleInputName2">d12</label>
+                                            <input type="text" class="form-control">
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="exampleInputName2">d20</label>
+                                                <input type="text" class="form-control">
+                                              </div>
+                                              <div class="form-group">
+                                                    <label for="exampleInputName2">d100</label>
+                                                    <input type="text" class="form-control">
+                                                  </div>
+                        <button type="submit" class="btn btn-primary">Roll</button>
+                      </form>
+        </div>
+        <div id="diceInteriorResult" class="col-md floatRight"><h3>Result</h3>
+        <div id="result">
+                <br />
+                <button type="submit" class="btn btn-primary">Send to Chat</button>
+        </div>
+        </div>
+    </div>
+    </div>
     </div>
 
     <div id="character" class="widgets">
         <p class="ui-widget-header">
             Character Sheet <img class="widgetIconCollapse">
         </p>
-        <div id="characterInterior" class="widgetInterior"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md">
+                    <img src="images/charactersheet.png" id="characterInterior" />
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">

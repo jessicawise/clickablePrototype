@@ -1,5 +1,5 @@
 
- var elements = 5;
+ var elements = 6;
 
 function applyDragResize(selector, config) {
     var horizontal = false;
